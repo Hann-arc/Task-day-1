@@ -9,11 +9,10 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as React from "react";
 import { Profile } from "./Profile";
-
+import { Link } from "react-router-dom";
 
 export const Main = () => {
   const [age, setAge] = React.useState<number>(19);
- 
 
   return (
     <Box
@@ -55,15 +54,21 @@ export const Main = () => {
           I undertake.
         </Text>
         <Box display={"flex"} marginTop={"20px"} gap={"20px"}>
-          <FontAwesomeIcon cursor={"pointer"} icon={faInstagram} size="xl" />
-
-          <FontAwesomeIcon cursor={"pointer"} icon={faTwitter} size="xl" />
-
-          <FontAwesomeIcon cursor={"pointer"} icon={faFacebookF} size="xl" />
-
-          <FontAwesomeIcon cursor={"pointer"} icon={faLinkedinIn} size="xl" />
-
-          <FontAwesomeIcon cursor={"pointer"} icon={faGithub} size="xl" />
+          <Link to="https://www.instagram.com/" target="_blank">
+            <FontAwesomeIcon cursor={"pointer"} icon={faInstagram} size="xl" />
+          </Link>
+          <Link to="https://x.com/" target="_blank">
+            <FontAwesomeIcon cursor={"pointer"} icon={faTwitter} size="xl" />
+          </Link>
+          <Link to="https://web.facebook.com/" target="_blank">
+            <FontAwesomeIcon cursor={"pointer"} icon={faFacebookF} size="xl" />
+          </Link>
+          <Link to="https://www.linkedin.com/" target="_blank">
+            <FontAwesomeIcon cursor={"pointer"} icon={faLinkedinIn} size="xl" />
+          </Link>
+          <Link to="https://github.com/" target="_blank">
+            <FontAwesomeIcon cursor={"pointer"} icon={faGithub} size="xl" />
+          </Link>
         </Box>
       </Box>
 
@@ -75,7 +80,7 @@ export const Main = () => {
         alignItems="center"
         p={5}
       >
-       <Profile age={age} setAge={setAge}/>
+        <Profile age={age} setAge={setAge} />
       </Box>
     </Box>
   );

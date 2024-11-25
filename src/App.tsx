@@ -1,13 +1,14 @@
-import { Box } from "@chakra-ui/react"
-import { Home } from "./layouts/home"
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/index"
 
 function App() {
-
   return (
-   <Box bg="black" color={"white"}  minHeight="100vh">
-    <Home />
-   </Box>
-  )
+    <div>
+      {" "}
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
-export default App
+export default App;

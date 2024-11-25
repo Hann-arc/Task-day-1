@@ -55,15 +55,15 @@ export const Main = () => {
           I undertake.
         </Text>
         <Box display={"flex"} marginTop={"20px"} gap={"20px"}>
-          <FontAwesomeIcon icon={faInstagram} size="xl" />
+          <FontAwesomeIcon cursor={"pointer"} icon={faInstagram} size="xl" />
 
-          <FontAwesomeIcon icon={faTwitter} size="xl" />
+          <FontAwesomeIcon cursor={"pointer"} icon={faTwitter} size="xl" />
 
-          <FontAwesomeIcon icon={faFacebookF} size="xl" />
+          <FontAwesomeIcon cursor={"pointer"} icon={faFacebookF} size="xl" />
 
-          <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
+          <FontAwesomeIcon cursor={"pointer"} icon={faLinkedinIn} size="xl" />
 
-          <FontAwesomeIcon icon={faGithub} size="xl" />
+          <FontAwesomeIcon cursor={"pointer"} icon={faGithub} size="xl" />
         </Box>
       </Box>
 
